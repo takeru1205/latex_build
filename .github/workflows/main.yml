@@ -15,4 +15,4 @@ jobs:
           root_file: main.tex
           token: ${{ secrets.GITHUB_TOKEN }}
           event_path: ${{ secrets.GITHUB_EVENT_PATH }} 
-          tags: v0.1.35
+          tags: v0.0.1
