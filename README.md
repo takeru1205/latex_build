@@ -12,13 +12,15 @@ GitHub Actionsを利用して，Pushされると自動的にTeXファイルか�
 
 ## 使い方
 1. [このリポジトリ](https://github.com/takeru1205/latex_build)をFork
-2. プライベートリポジトリに設定[参考](https://reasonable-code.com/public-to-private/)
-3. forkしたリポジトリを自分のパソコンにClone (**Releaseが一つも無い場合 v0.0.0とかにして適当に作っておいてください**)
-4. ローカルでmain.texを編集
-5. .github/workflows/main.yml内の一番下の行のtagsの値を変更(変更しないとファイルが正常にアップロードされません)
-6. リモートにPush
-7. ActionsでBuildの経過を確認(約9分程度で完了)
-8. GitHub ReleasesのAssetsにPDFファイルがあるので，適宜ダウンロードしてください
+2. プライベートリポジトリに設定([参考](https://reasonable-code.com/public-to-private/))
+3. forkしたリポジトリを自分のパソコンにClone
+4. [**1回目のみ**]Releaseが一つも無い場合 v0.0.0とかにして適当に作っておいてください
+5. ローカルでmain.texを編集
+6. [**1回目のみ**.]github/workflows/main.yml内repositoryの部分を自分のリポジトリに変更してください
+7. .github/workflows/main.yml内の一番下の行のtagsの値を変更(変更しないとファイルが正常にアップロードされません) 
+8. リモートにPush
+9. ActionsでBuildの経過を確認(約9分程度で完了)
+10. GitHub ReleasesのAssetsにPDFファイルがあるので，適宜ダウンロードしてください
 
 cloneした状態のmain.texでは，`contents/`の中に各sectionが入っているので，気に入らなければ大学から配布されているsample.texを元にして編集してください．
 画像などのファイルは`figures/`に入っているので，[TeX Wiki](https://texwiki.texjp.org/?LaTeX%E5%85%A5%E9%96%80%2F%E5%9B%B3%E8%A1%A8)を参考にしてください．
