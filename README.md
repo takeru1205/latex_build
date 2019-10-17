@@ -6,6 +6,10 @@ author:[@tkr12051](https://twitter.com/tkr12051)
 このリポジトリは，弊学の卒業研究中間報告書記述用の環境です．       
 GitHub Actionsを利用して，Pushされると自動的にTeXファイルからPDFファイルを作ります．
 
+## 前提
+- gitをある程度使える必要があります
+- GitHub Actionsはまだベータのため申請しておく必要があります(申請は[コチラ](https://github.com/features/actions))
+
 ## 使い方
 1. このリポジトリをFork
 2. forkしたリポジトリを自分のパソコンにClone
