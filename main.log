@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190131-2.6 (utf8.euc) (TeX Live 2019) (preloaded format=platex 2019.10.16)  17 OCT 2019 14:13
+This is e-pTeX, Version 3.14159265-p3.8.2-190131-2.6 (utf8.euc) (TeX Live 2019) (preloaded format=platex 2019.10.16)  23 OCT 2019 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -94,6 +94,10 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+
+
+LaTeX Warning: Citation `DeepQNet' on page 1 undefined on input line 7.
+
 ) (./contents/positioning_of_research.tex)
 Overfull \hbox (24.24069pt too wide) in paragraph at lines 4--34
 \OT1/cmtt/m/n/10.95 www . fun . ac . jp / department / curriculum _ policy/$
@@ -102,25 +106,35 @@ Overfull \hbox (24.24069pt too wide) in paragraph at lines 4--34
 (./contents/related_work.tex) (./contents/propose_method.tex
 File: figures/Lena.png Graphic file (type bmp)
 <figures/Lena.png>
-) (./contents/experiments.tex) (./contents/discussion.tex
+) (./contents/experiments.tex
+
+LaTeX Warning: Citation `rubikcube' on page 1 undefined on input line 3.
+
+) (./contents/discussion.tex
 Overfull \vbox (2.96568pt too high) has occurred while \output is active []
 
  [1
 
 
-]) (./contents/conclusion.tex) (./contents/reference.tex)
+]) (./contents/conclusion.tex) (./contents/reference.tex
+No file main.bbl.
+)
 Overfull \vbox (2.96568pt too high) has occurred while \output is active []
 
  [2
 
-] (./main.aux) ) 
+] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
  836 strings out of 492763
- 10547 string characters out of 6140193
+ 10540 string characters out of 6140193
  80649 words of memory out of 5000000
- 5295 multiletter control sequences out of 15000+600000
+ 5294 multiletter control sequences out of 15000+600000
  14951 words of font info for 58 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  28i,10n,25p,472b,281s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (2 pages, 6336 bytes).
+Output written on main.dvi (2 pages, 5588 bytes).
