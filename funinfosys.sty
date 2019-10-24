@@ -1,18 +1,20 @@
-﻿%
+%
 % 公立はこだて未来大学卒業研究中間報告書[情報システム/高度ICTコース]スタイルファイル
 %
 %          ファイル名："funinfosys.sty"
 %
 % 印刷位置の水平方向微調整パラメータ
 \newlength{\suiheioffset}
-\setlength{\suiheioffset}{0mm}
+\setlength{\suiheioffset}{0mm} 
 % 表題左部分の空白調整パラメータ
 \newlength{\hyodaioffset}
-\setlength{\hyodaioffset}{10mm}
+\setlength{\hyodaioffset}{10mm} 
 \typeout{*** FUN Graduation Study Midterm Report Style ***}
-%\topmargin -1.04cm \headheight 5mm \headsep 8mm \footheight 20pt \footskip 30pt
+ \topmargin -1.04cm \headheight 0.5cm \headsep 0.8cm 
+ %\footheight 0.7cm 古いバージョンで使用されていた
+ \footskip 30pt
 %
-\textheight 9.8in \textwidth 6.55in \columnsep .38in \columnseprule 0pt
+\textheight 9.8in \textwidth 6.55in \columnsep .38in \columnseprule 0pt 
 \oddsidemargin 0mm \evensidemargin 0mm
 
 \def\course#1{\gdef\@course{#1}}
@@ -29,15 +31,15 @@
 \def\maketitle{\par
  \begingroup
  \def\thefootnote{\fnsymbol{footnote}}
- \def\@makefnmark{\hbox
- to 0pt{$^{\@thefnmark}$\hss}}
- \twocolumn[\@maketitle]
+ \def\@makefnmark{\hbox 
+ to 0pt{$^{\@thefnmark}$\hss}} 
+ \twocolumn[\@maketitle] 
  \@thanks
  \endgroup
  \let\maketitle\relax
  \let\@maketitle\relax
  \gdef\@thanks{}\gdef\@author{}\gdef\@title{}\let\thanks\relax}
-% 表題の配置
+% 表題の配置 
 % 本文の始まる位置を下げたい場合には，この1.4という値を大きくすればよい。
 %\def\@maketitle{\vbox to 3.7in{\hsize\textwidth
 \def\@maketitle{\vbox to 4.5in{\hsize\textwidth
@@ -46,7 +48,7 @@
  {\Large \bf\@title \par}
 % {\LARGE \hspace*{\hyodaioffset}\@title \par}
  \medskip
- {\large \begin{tabular}[t]{c}\@author\end{tabular}\par}
+ {\large \begin{tabular}[t]{c}\@author\end{tabular}\par} 
  \vskip 4mm {\normalsize\bf \@etitle \par}
  \vskip 2mm {\normalsize \@eauthor \par}
  \def\baselinestretch{0.8}%add
@@ -74,13 +76,13 @@
 \floatsep 12pt plus 12pt minus 12pt
 \textfloatsep 20pt plus 12pt minus 12pt
 \intextsep 12pt plus 12pt minus 12pt
-\def\fnum@figure{Fig. \thefigure}
-\def\fnum@table{Table \thetable}
+\def\fnum@figure{Fig. \thefigure} 
+\def\fnum@table{Table \thetable}   
 \long\def\@makecaption#1#2{
- \vskip 10pt
+ \vskip 10pt 
  \setbox\@tempboxa\hbox{#1\ \ #2}
  \ifdim \wd\@tempboxa >\hsize \unhbox\@tempboxa\par \else \hbox
-to\hsize{\hfil\box\@tempboxa\hfil}
+to\hsize{\hfil\box\@tempboxa\hfil} 
  \fi}
 
 \def\etitle#1{\gdef\@etitle{#1}}
@@ -147,16 +149,16 @@ to\hsize{\hfil\box\@tempboxa\hfil}
 % \@startsectionの第4引き数を負にすると見出しの後インデントしない．
 % 　　　〃　　　　第5引き数を負にすると見出しの後改行しない．
 % 　　　〃　　　　第6引き数は見出しフォントの指定
-\def\section{\@startsection {section}{1}{\z@}{1.25ex plus 1ex minus
+\def\section{\@startsection {section}{1}{\z@}{1.25ex plus 1ex minus 
  .2ex}{1.0ex plus .2ex}{\large\bf}}
-\def\subsection{\@startsection{subsection}{2}{\z@}{1.25ex plus 1ex minus
+\def\subsection{\@startsection{subsection}{2}{\z@}{1.25ex plus 1ex minus 
  .2ex}{1.0ex plus .2ex}{\large\bf}}
-\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{1.25ex plus
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{1.25ex plus 
  1ex minus .2ex}{1.0ex plus .2ex}{\normalsize\bf}}
 \def\paragraph{\@startsection
  {paragraph}{4}{\z@}{1.25ex plus 1ex minus .2ex}{-1em}{\normalsize\bf}}
 \def\subparagraph{\@startsection
- {subparagraph}{4}{\parindent}{1.25ex plus 1ex minus
+ {subparagraph}{4}{\parindent}{1.25ex plus 1ex minus 
  .2ex}{-1em}{\normalsize\bf}}
 % リスト環境のパラメータ
 \leftmargini 18pt
@@ -171,7 +173,7 @@ to\hsize{\hfil\box\@tempboxa\hfil}
  \labelwidth=\leftmarginii
  \advance\labelwidth by -\labelsep
  \topsep=0pt \parsep=0pt \itemsep=0pt \parsep=0pt \itemindent 0pt \relax}
-\let\@listi\@listI \@listi
+\let\@listi\@listI \@listi 
 % 参考文献
 \def\thebibliography#1{\section*{参考文献}
   \global\def\@listi{\leftmargin\leftmargini
@@ -185,4 +187,8 @@ to\hsize{\hfil\box\@tempboxa\hfil}
     \sfcode`\.=1000\relax}
 %
 %
-% EOF
+% EOF  
+
+
+
+
